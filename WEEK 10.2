@@ -1,0 +1,20 @@
+n=int(input())
+m=input().split(" ")
+l=[]
+b=[]
+for i in m:
+    if i!='':
+        l.append(int(i))
+for i in range(0,n):
+    if i>0 and i<n-1:
+        if (l[i-1]<=l[i] and l[i]>=l[i+1]):
+            b.append(l[i])
+    if i==0:
+        if l[i] >= l[i+1]:
+            b.append(l[i])
+    if i==n-1:
+        if l[i-1] <= l[i]:
+            b.append(l[i])
+for i in b:
+    print(i,end=" ")
+            
