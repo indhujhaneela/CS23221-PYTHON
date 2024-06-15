@@ -1,0 +1,5 @@
+Amount=int(input())
+tax=Amount*0.05
+tip=Amount*0.18
+Total=Amount+tax+tip
+print("The tax is %.2f" %tax,"and the tip is %.2f," %tip,"making the total %.2f" %Total)
