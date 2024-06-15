@@ -1,0 +1,18 @@
+no=int(input())
+s=input()
+q=s.split()
+n=[]
+for i in q:
+    n.append(int(i))
+t=input()
+r=t.split()
+o=[]
+for i in r:
+    o.append(int(i))
+p=[]
+for i in range(no):
+    for j in range(no):
+        if n[i]==o[j]:
+            p.append(j)
+for i in p:
+    print(i,end=" ")
