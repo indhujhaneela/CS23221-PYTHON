@@ -1,0 +1,10 @@
+def christmasDiscount(n):
+    n=str(n)
+    m=len(n)
+    dis=0
+    for i in range(m):
+        if (int(n[i]))%2!=0:
+            dis+=int(n[i])
+        else:
+            continue
+    return dis
