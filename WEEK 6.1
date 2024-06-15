@@ -1,0 +1,21 @@
+no=int(input())
+l1=[]
+n1=0
+count=0
+for i in range(no):
+    l=int(input())
+    l1.append(l)
+sear=int(input())
+for i in range(no):
+    if l1[i]==sear:
+        print(l1[i],"is present at location",i+1,end=".")
+        print()
+        count+=1
+    
+    else:
+        n1+=1
+if n1==no:
+    print(sear,"is not present in the array.")
+if count!=0:
+    print(sear,"is present",count,"times in the array.")
+        
