@@ -1,0 +1,19 @@
+num=input()
+num1=input()
+m=0
+n=0
+try:
+    num=int(num)
+    num1=int(num1)
+    if num1 != 0:
+        m=float(num/num1)
+        print("Division result:",m)
+        n=num%num1
+        print("Modulo result:",n)
+except:
+    print("Error: Non-numeric input provided.")
+        
+else:
+    if num1==0:
+        print("Error: Cannot divide or modulo by zero.")
+    
