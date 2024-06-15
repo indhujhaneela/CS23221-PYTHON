@@ -1,0 +1,14 @@
+n=10
+l=list()
+for i in range(n):
+    m=int(input())
+    l.append(m)
+ins=int(input())
+print("ITEM to be inserted:{}".format(ins))
+print("After insertion array is:")
+for i in range(n):
+    if l[i]<ins and l[i+1]>ins:
+        l.insert(i+1,ins)
+for i in range(len(l)):
+    print(l[i])
+    
