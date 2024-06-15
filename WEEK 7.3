@@ -1,0 +1,15 @@
+str1=input()
+str2=list(str1)
+j=0
+m=len(str2)
+for i in str2:
+    if i=='0' or i=='1':
+        i=int(i)
+    if i==0 or i==1:
+        j+=1
+if j==m:
+    print("Yes")
+else:
+    print("No")
+        
+        
