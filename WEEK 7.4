@@ -1,0 +1,15 @@
+s=input()
+a=[]
+for i in range(len(s)):
+    x=s[i:i+10]
+    if(x in s[i+10:] and len(x)==10):
+        a.append(x)
+for i in a:
+    print(i)
+c=0
+for i in s:
+    if(i==s[0]):
+        c+=1
+if(c==len(s)):
+    print(s[0]*10)
+    
