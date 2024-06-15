@@ -1,0 +1,12 @@
+try:
+    n=input()
+    m=input()
+    n=float(n)
+    m=float(m)
+    o=float(n/ m)
+    print(o)
+except ValueError:
+    print("Error: Non-numeric input provided.")
+except ZeroDivisionError:
+    print("Error: Cannot divide or modulo by zero.")
+    
