@@ -1,0 +1,8 @@
+num = int(input())
+numb = abs(num)
+sec_digit = numb//10
+last_digit = sec_digit%10
+if last_digit != 0:
+    print(last_digit)
+else:
+    print("-1")
