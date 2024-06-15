@@ -1,0 +1,19 @@
+str1=input()
+str4=input()
+str5=list(str4)
+count=0
+tot=0
+str2=str1.split(" ")
+leng=len(str2)
+for st in str2:
+    l1=list(st)
+    for i in st:
+        for j in str5:
+            if i==j:
+                count+=1
+if count != 0:
+    if count<leng:
+        tot=leng-count
+        print(tot)
+        
+    
