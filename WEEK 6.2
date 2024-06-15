@@ -1,0 +1,20 @@
+n = int(input())
+a = []
+for i in range(n):
+    x = int(input())
+    a.insert(i,x)
+m = int(input())
+b = []
+for i in range(m):
+    b.append(int(input()))
+c = []
+c.extend(a)
+c.extend(b)
+d = []
+for i in range(n+m):
+    if c[i] not in d:
+        d.append(c[i])
+d.sort()
+for i in range(len(d)):
+    print(d[i], end=' ')
+    
