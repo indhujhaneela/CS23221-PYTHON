@@ -1,0 +1,19 @@
+n=int(input())
+d={}
+b=[]
+for i in range(n):
+    x=input().split()
+    s=""
+    l=[]
+    for j in x:
+        if(j.isalpha()):
+            s=s+j
+        else:
+            l.append(int(j))
+    d[s]=sum(l)
+    b.append(sum(l))
+m=list(d.values())
+m.sort()
+k=list(d.keys())
+for i in range(len(m)):
+    print(k[b.index(m[i])],m[i])
