@@ -1,0 +1,20 @@
+n=int(input())
+m=input().split(" ")
+l=[]
+mag=0
+flag=0
+sear=int(input())
+for i in m:
+    l.append(int(i))
+for i in range(n):
+    for j in range(n):
+        if i!=j and l[i]!=l[j]:
+            if l[i] + l[j]==sear:
+                mag=1
+            else:
+                flag=1
+if mag==1:
+    print('Yes')
+else:
+    print('No')
+    
