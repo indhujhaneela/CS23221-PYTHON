@@ -1,0 +1,13 @@
+def differenceSum(n):
+    n=str(n)
+    m=len(n)
+    n1=0
+    n2=0
+    for i in range(m):
+        if i%2==0:
+            n1+=int(n[i])
+        else:
+            n2+=int(n[i])
+    diff=abs(n1-n2)
+    return diff
+    
