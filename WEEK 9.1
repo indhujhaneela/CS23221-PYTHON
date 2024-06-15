@@ -1,0 +1,14 @@
+def productDigits(n):
+    l=1
+    l1=0
+    n=str(n)
+    m=len(n)
+    for i in range(m):
+        if i%2!=0:
+            l*=int(n[i])
+        else:
+            l1+=int(n[i])
+    if l%l1==0:
+        return True
+    else:
+        return False
