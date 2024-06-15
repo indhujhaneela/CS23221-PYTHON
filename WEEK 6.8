@@ -1,0 +1,22 @@
+m=int(input())
+n=int(input())
+o=m*n
+l=[]
+for i in range(o):
+    p=int(input())
+    l.append(p)
+l1=[]
+for i in range(o):
+    p1=int(input())
+    l1.append(p1)
+l3=[]
+for i in range(m):
+    l3.append(l[i])
+for i in range(n):
+    l3.append(l1[i])
+l4=[]
+for i in range(m,o):
+    l4.append(l[i])
+for i in range(m,o):
+    l4.append(l1[i])
+print("[",l3,", ",l4,"]",sep="")
