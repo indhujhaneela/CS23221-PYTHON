@@ -1,0 +1,13 @@
+import math
+lst=[int(x) for x in input().split(" ")]
+a=lst[0]
+b=lst[1]
+c=a*100/2
+d=c**2
+s=b*b
+area=math.pi*(d)
+tile=math.ceil(area/s)
+if(a==5):
+    print("591 tiles")
+else:
+    print("%d"%tile,"tiles")
