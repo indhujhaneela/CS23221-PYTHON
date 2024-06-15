@@ -1,0 +1,9 @@
+m=int(input())
+n=set()
+for i in range(m):
+    p=int(input())
+    n.add(p)
+p=list(n)
+for i in p:
+    print(i,end=" ")
+    
