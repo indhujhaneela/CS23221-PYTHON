@@ -1,0 +1,15 @@
+str1=input()
+str2=input()
+no=int(input())
+list1=[]
+str3=""
+for i in str1:
+    for j in str2:
+        if i==j and i not in list1:
+            list1.append(i)
+for i in range(len(list1)):
+    if i<no:
+        str3+=list1[i]
+print(str3)
+        
+        
