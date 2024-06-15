@@ -1,0 +1,12 @@
+n=int(input())
+s=input().split()
+s=[int(i) for i in s]
+k=int(input())
+l=[]
+c=0
+for i in range(0,n):
+    for j in range(i+1,n):
+        if(abs(s[i]-s[j])==k):
+            c=c+1
+            l.append([s[i],s[j]])
+print(c)
