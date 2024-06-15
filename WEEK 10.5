@@ -1,0 +1,12 @@
+n=int(input())
+m=input().split(' ')
+m1=list()
+for i in m:
+    if i!='':
+        m1.append(int(i))
+for i in range(0,n-1):
+    for j in range(i+1,n):
+        if m1[i]>m1[j]:
+            m1[i],m1[j]=m1[j],m1[i]
+for i in m1:
+    print(i,end=" ") 
