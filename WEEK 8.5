@@ -1,0 +1,32 @@
+n = int(input())
+l = []
+k = []
+for i in range(n):
+    l.append(input())
+d={}
+s=set(l)
+for i in s:
+    d[i]=l.count(i)
+v = list(d.values())
+k = list(d.keys())
+f=[]
+flag=0
+for i in v:
+    if(i not in f):
+        f.append(i)
+    else:
+        flag = 1
+        break
+if(flag == 0):
+    print(k[v.index(max(v))])
+else:
+    a = []
+    b=max(v)
+    for i in v:
+        if(i==b):
+            a.append(k[v.index(i)])
+    print(min(a))
+
+
+        
+    
