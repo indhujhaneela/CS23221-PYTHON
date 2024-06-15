@@ -1,0 +1,11 @@
+try:
+    n=input()
+    n=int(n)
+    if n>0 and n<=100:
+        print("Valid input.")
+    else:
+        print("Error: Number out of allowed range")
+except ValueError:
+    print("Error: invalid literal for int()")
+except EOFError:
+    print("Error: invalid literal for int()")
