@@ -1,0 +1,10 @@
+str1=input()
+str2=str1.split(" ")
+maxlen=0
+maxstr=""
+for i in str2:
+    if len(i)>maxlen:
+        maxlen=len(i)
+        maxstr=i
+print(maxstr)
+print(maxlen)
