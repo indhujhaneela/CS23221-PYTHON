@@ -1,0 +1,19 @@
+str1=input()
+NO=0
+for i in str1:
+    if i in ['A','E','I','L','N','O','R','S','T','U']:
+        NO+=1
+    if i in ['D','G']:
+        NO+=2
+    if i in ['B','C','M','P']:
+        NO+=3
+    if i in ['F','H','V','W','Y']:
+        NO+=4
+    if i in ['K']:
+        NO+=5
+    if i in ['J','X']:
+        NO+=8
+    if i in ['Q','Z']:
+        NO+=10
+print(str1,"is worth",NO,"points.")
+    
