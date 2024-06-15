@@ -1,0 +1,48 @@
+n=int(input())
+d={}
+sc=[]
+am=[]
+lm=[]
+for i in range(n):
+    x=input().split()
+    d[x[0]]=[int(x[1]),int(x[2]),int(x[3])]
+    sc.append(sum(d[x[0]])//3)
+    am.append(int(x[2]))
+    lm.append(int(x[3]))
+a1=[]
+a2=[]
+a3=[]
+a4=[]
+k=list(d.keys())
+for i in range(len(k)):
+    if(sc[i]==max(sc)):
+        a1.append(k[i])
+
+for i in range(len(k)):
+    if(am[i]==max(am)):
+        a2.append(k[i])
+        
+for i in range(len(k)):
+    if(lm[i]==min(lm)):
+        a3.append(k[i])
+        
+for i in range(len(k)):
+    if(sc[i]==min(sc)):
+        a4.append(k[i])
+    
+a1.sort()
+a2.sort()
+a3.sort()
+a4.sort()
+for i in a1:
+    print(i,end=" ")
+print(" ")
+for i in a2:
+    print(i,end=" ")
+print(" ")
+for i in a3:
+    print(i,end=" ")
+print(" ")
+for i in a4:
+    print(i,end=" ")
+print(" ")
