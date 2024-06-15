@@ -1,0 +1,9 @@
+str1=input()
+no=int(input())
+l=[]
+str2=str1.split(" ")
+for i in str2:
+    if len(i) >= no:
+        l.append(i)
+print(len(l))
+        
